@@ -29,4 +29,8 @@ sum-up-numbers-general(N,Sum1),
 TotalSum is L + Sum1.
 
 % #4-common-unique-elements
+common-unique-elements([], _,[]).
 
+common-unique-elements([H1|L1],L2,[H1|Res]) :-
+    member(H1,L2),
+    common-unique-elements(L1,L2,Res).
