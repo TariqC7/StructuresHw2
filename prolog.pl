@@ -38,3 +38,6 @@ common-unique-elements([H1|L1],L2,[H1|Res]) :-
 
 common-unique-elements([[[a]]],[a],a).
 common-unique-elements([a,9,[b,8,c],[13,[[d],6],e,20]],[2,e,[3,d,4],[c,[[5],[b],[[6]]],a],7],(a,b,c,d,6,e)).
+
+common-unique-elements([_|L1],L2,Res) :-
+    common-unique-elements(L1,L2,Res).
