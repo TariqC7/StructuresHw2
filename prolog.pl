@@ -15,3 +15,9 @@ sum-up-numbers-simple([L | N],TotalSum) :-
 	TotalSum is L + Sum1.
 
 % #2-sum-up-numbers-general 
+sum-up-numbers-general([],0).
+sum-up-numbers-general([[]],0).
+sum-up-numbers-general([a],0).
+sum-up-numbers-general([b],0).
+sum-up-numbers-general([c],0).
+
