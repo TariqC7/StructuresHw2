@@ -41,3 +41,4 @@ common-unique-elements([a,9,[b,8,c],[13,[[d],6],e,20]],[2,e,[3,d,4],[c,[[5],[b],
 
 common-unique-elements([_|L1],L2,Res) :-
     common-unique-elements(L1,L2,Res).
+    %majority of test cases were passed
