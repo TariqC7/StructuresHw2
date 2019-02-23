@@ -23,3 +23,10 @@ sum-up-numbers-general([c],0).
 sum-up-numbers-general([[100]],100).
 sum-up-numbers-general([100,[200]],300).
 sum-up-numbers-general([a,100,[[b,[[200],c]],300,d]],600).
+
+sum-up-numbers-general([L | N],TotalSum) :-
+sum-up-numbers-general(N,Sum1),
+TotalSum is L + Sum1.
+
+% #4-common-unique-elements
+
